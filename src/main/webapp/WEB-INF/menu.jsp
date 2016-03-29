@@ -10,18 +10,19 @@
 </head>
 <body>
 	<div>
-	<label>Olá, </label> <br>
-		<%
-			Usuario usuario = ((Usuario) request.getSession().getAttribute("usuController")); // CAST -> converter o objeto em usuario " O setAttribute cria um objeto"
+	<label>Olá, </label>
+		 <%
+			Usuario usuario = ((Usuario)request.getSession().getAttribute("usuario")); // CAST -> converter o objeto em usuario " O setAttribute cria um objeto"
 			out.print(usuario.getNome());
-		%>
+		%> 
 
 	</div>
 
-
+	<br>
 	<div id="menu">
-		<a href="">Home</a>| <a href="usuController?acao=cadastrar">Cadastrar</a>|
-		<a href="usuController?acao=listar">Lista</a>|
+		<a href="home">Home</a>| 
+		<a href="usuController?acao=cadastrar">Cadastrar</a>|
+		<a href="usuController?acao=listar">Lista</a>
 	</div>
 
 </body>

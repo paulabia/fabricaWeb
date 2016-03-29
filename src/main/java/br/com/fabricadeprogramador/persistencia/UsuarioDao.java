@@ -14,8 +14,8 @@ public class UsuarioDao {
 	private Connection con = ConexaoFactory.getConnection(); 
 	
 	public void cadastrar(Usuario usuario){
-		//String sql = "insert into Usuario (id,nome, login, senha) values (ID.NEXTVAL,?,?,?)";
-		String sql = "insert into Usuario (nome, login, senha) values (?,?,?)";
+		String sql = "insert into Usuario (id,nome, login, senha) values (ID.NEXTVAL,?,?,?)";
+		//String sql = "insert into Usuario (nome, login, senha) values (?,?,?)";
 		
 		try {
 			//Criando um statement

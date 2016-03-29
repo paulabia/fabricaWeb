@@ -8,9 +8,9 @@
 </head>
 <body>
 
-	<div>
+	 <div>
 		<%@ include file="menu.jsp"%>
-	</div>
+	</div> 
 
 	<div>
 		<h3>Seja bem vindo!</h3>

@@ -27,7 +27,7 @@ public class Filter implements javax.servlet.Filter{
 		HttpServletResponse httpServletResponse = (HttpServletResponse)response;
 		
 		String uri = httpServletRequest.getRequestURI();
-		HttpSession sessao = httpServletRequest.getSession(false);
+		HttpSession sessao = httpServletRequest.getSession(false); 
 		
 		if(sessao!=null || uri.lastIndexOf("login.html")!=-1 || uri.lastIndexOf("autenticar")!=-1){
 			chain.doFilter(request, response); // significa siga em frente
